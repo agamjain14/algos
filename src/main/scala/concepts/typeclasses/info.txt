@@ -1,0 +1,32 @@
+there are four components of type classes
+ - the actual type class itself
+ - the type class instances
+ - interfaces using implicit parameters; and
+ - interfaces using enrichment and implicit parameters
+
+The type class is a trait with atleast one type variable. THe type variable specify the concrete types the type class instances are defined for.
+
+basic pattern for implementing type classes
+
+-> we declare some interface for the functionality we want
+trait htmlWriter[A] {
+    def toHTml(in: A): String
+}
+
+-> we write type class instances for each concrete class we want to use and for each different stuation we want to use
+
+object PersonWriter extends HtmlWriter[Person] {
+    def toHtml(person: Person) = s"${person.name} (${person.email})"
+    }
+object ObfuscatedPersonWriter extends HtmlWriter[Person] {
+    def toHtml(person: Person) = s"${person.name} (${person.email.replaceAll("@", " at ")})"}
+
+This allows us to implement the functinality for any type, and to provide differnt implementations for the same type
+
+
+********
+A type class is like a trait, defining an interface
+    where we can
+    -> plug in different implementations of an interface for a given class
+    -> implement an interface without modifying existing code
+

@@ -1,0 +1,11 @@
+The redesign of scala.concurrent provides a new Future and Promises API, meant to act as a common foundation for multiple
+framework
+
+2) By default futures and promises are non-blocking, making use of callback instead
+3) in an effort to facilitate and make use of callback on a higher-level --> we use flatMap, foreach, and filter
+    for composing future in a non-blocking way
+
+
+CALLBACK
+
+1) to obtain the future's result, a client of the future would have to block until the future

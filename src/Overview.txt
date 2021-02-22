@@ -1,0 +1,9 @@
+why scala?
+1) The biggest strength of Scala is its flexibility in defining abstractions.
+2) Built-in lazy evaluation
+
+
+array.indices // return range
+array1.zip(array2) // mixes two array
+
+functions allow abstract over methods

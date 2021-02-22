@@ -1,0 +1,5 @@
+package algos
+
+object BinaryTree {
+
+}

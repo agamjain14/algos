@@ -1,0 +1,7 @@
+fileignoreconfig:
+- filename: .tailsmanrc
+  checksum: 91f4732a139b7815b8fdddfa4f3d08504264fbc60161155c1ac9db6ee2863cc4
+- filename: src/main/scala/interviewbit/SubsetSum.scala
+  checksum: 5586bc61b3c35a11a3f50c1ca32bc798b3d769569c7e48a13c1a665694791002
+- filename: src/main/scala/concepts/typeclasses/essentialscala/Approach1.scala
+  checksum: 3ef965c7e60f6d64fa09dce6f8ce8c633e5a85aeaa9133f028d447f254b3a2c2
